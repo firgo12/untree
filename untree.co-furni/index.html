@@ -88,8 +88,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							document.getElementById("cart").addEventListener("click", viewCart());
 
 							function viewCart() {
-						 		dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({
+						 		window.dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+window.dataLayer.push({
   event: "cart",
   nameEvent: "view_cart",
   ecommerce: {
